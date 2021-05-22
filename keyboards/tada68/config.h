@@ -58,6 +58,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BACKLIGHT_BREATHING
 #define BACKLIGHT_LEVELS 4
 
+/* Disable switching layers with command */
+/* https://beta.docs.qmk.fm/using-qmk/advanced-keycodes/feature_command */
+/* Disabled because pressing left+right shift together would overwrite the default layer */
+#define MAGIC_KEY_SWITCH_LAYER_WITH_FKEYS false
+#define MAGIC_KEY_SWITCH_LAYER_WITH_NKEYS false
+
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
